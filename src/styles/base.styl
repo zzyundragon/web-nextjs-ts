@@ -1,0 +1,46 @@
+@import './mixin.styl'
+@import './common.styl'
+@import './grid.styl'
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4, h5, h6, i, b, textarea, button, input, select, figure, figcaption
+  padding 0
+  margin 0
+  list-style none
+  font-style normal
+  text-decoration none
+  border none
+  font-weight normal
+  font-family 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif
+  font 18px
+  box-sizing border-box
+  -webkit-tap-highlight-color transparent
+  -webkit-font-smoothing antialiased
+  &:hover
+    outline none
+input:focus, textarea:focus, select:focus, button:focus
+  outline none
+page, body
+  font-size 22px
+  width 100%
+  height 100%
+  min-width 900px
+  overflow-x auto
+  background-color $bg-color-base
+  color $color-dark
+  box-sizing border-box
+// ******常用类******/
+.fw-bolder
+  font-weight bolder
+.clearfixafter
+  content ''
+  display block
+  clear both
+.clearfix
+  zoom 1
+  &after
+    content ''
+    display block
+    clear both
+.pointer
+  cursor pointer
+.selected
+  color #148bff
